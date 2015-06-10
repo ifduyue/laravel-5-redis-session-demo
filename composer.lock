@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8ae2d9d0c9e9a97ae679967d257c3e80",
+    "hash": "74bd685945febaa1a8e0bf111341e86f",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -368,17 +368,11 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.1.1",
+            "version": "dev-issue-9157",
             "source": {
                 "type": "git",
-                "url": "https://github.com/laravel/framework.git",
-                "reference": "3a44db7e70146dc1282b39887b5faa67c8583015"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/3a44db7e70146dc1282b39887b5faa67c8583015",
-                "reference": "3a44db7e70146dc1282b39887b5faa67c8583015",
-                "shasum": ""
+                "url": "https://github.com/ifduyue/framework",
+                "reference": "876d4025be1ea9732a35cd308c1b13017c52b4b1"
             },
             "require": {
                 "classpreloader/classpreloader": "~1.2",
@@ -476,7 +470,6 @@
                     "Illuminate\\": "src/Illuminate/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -492,7 +485,11 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-06-09 14:13:59"
+            "support": {
+                "issues": "https://github.com/laravel/framework/issues",
+                "source": "https://github.com/laravel/framework"
+            },
+            "time": "2015-06-10 09:25:25"
         },
         {
             "name": "league/flysystem",
@@ -3038,6 +3035,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "laravel/framework": 20,
         "predis/predis": 20
     },
     "prefer-stable": true,

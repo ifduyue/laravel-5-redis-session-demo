@@ -4,9 +4,15 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/ifduyue/framework"
+        }
+    ],
     "require": {
         "php": ">=5.5.9",
-        "laravel/framework": "5.1.*",
+        "laravel/framework": "dev-issue-9157",
         "predis/predis": "^1.1@dev"
     },
     "require-dev": {
