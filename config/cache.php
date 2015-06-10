@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('CACHE_DRIVER', 'file'),
+    'default' => 'redis',
 
     /*
     |--------------------------------------------------------------------------
@@ -58,7 +58,7 @@ return [
 
         'redis' => [
             'driver' => 'redis',
-            'connection' => 'default',
+            'connection' => 'for-cache',
         ],
 
     ],
@@ -74,6 +74,6 @@ return [
     |
     */
 
-    'prefix' => 'laravel',
+    'prefix' => '',
 
 ];

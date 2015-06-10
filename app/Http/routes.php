@@ -12,5 +12,16 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $reader = function & ($object, $property) {
+        $value = & Closure::bind(function & () use ($property) {
+            return $this->$property;
+        }, $object, $object)->__invoke();
+
+        return $value;
+    };
+
+    return [
+        'config' => config('database.redis'),
+        'cache\'s connection parameters' => $reader($reader($reader(Cache::connection(), 'connection'), 'parameters'), 'parameters'),
+    ];
 });
